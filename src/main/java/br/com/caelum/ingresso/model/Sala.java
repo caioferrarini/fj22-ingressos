@@ -38,14 +38,17 @@ public class Sala {
     /**
      * @deprecated hibernate only
      */
-    public Sala() {
-
-    }
-
+	
+	public Sala(){
+		
+	}
+	
     public Sala(String nome, BigDecimal preco) {
-        this.nome = nome;
+    	this.nome = nome;
         this.preco = preco;
     }
+
+    
     
     public BigDecimal getPreco(){
     	return preco.setScale(2, RoundingMode.HALF_UP);
@@ -79,7 +82,7 @@ public class Sala {
     public List<Lugar> getLugares() {
         return lugares;
     }
-
+    
     public void setLugares(List<Lugar> lugares) {
         this.lugares = lugares;
     }
